@@ -30,6 +30,123 @@
         </div>
     </nav>
 
+<!---------------------- FORMULARIO CONTACTO ---------------->
+
+<br><br><br><br><br><br>
+    <h2 class="titulo-responsive">Contacto</h2>
+
+<div class="form-container">
+<form id="pasteleriaForm">
+    <!-- Información Personal -->
+    <div class="form-group">
+        <label for="nombre" class="required">Nombre Completo</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo">
+    </div>
+    <div class="form-row">
+        <div class="form-col">
+            <div class="form-group">
+                <label for="telefono" class="required">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +54 1132365278">
+            </div>
+        </div>
+        <div class="form-col">
+            <div class="form-group">
+                <label for="email" class="required">Email</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@email.com">
+            </div>
+        </div>
+    </div>
+
+<!--- Tipo de Pastel --->
+    <div class="form-group">
+        <label for="tipoPastel" class="required">Tipo de Pastel</label>
+        <select id="tipoPastel" name="tipoPastel" required>
+            <option value="">Selecciona un tipo de pastel</option>
+            <option value="tarta">Tarta Personalizada</option>
+            <option value="cupcakes">Cupcakes</option>
+            <option value="cheesecake">Cheesecake</option>
+            <option value="red-velvet">Red Velvet</option>
+            <option value="chocolate">Torta de Chocolate</option>
+            <option value="frutas">Tarta de Frutas</option>
+            <option value="otros">Otros</option>
+        </select>
+    </div>
+
+    <!--- Sabor --->
+    <div class="form-group">
+        <label for="sabor" class="required">Sabor Principal</label>
+        <select id="sabor" name="sabor" required>
+            <option value="">Selecciona el sabor</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="vainilla">Vainilla</option>
+            <option value="fresa">Fresa</option>
+            <option value="limon">Limón</option>
+            <option value="cafe">Café</option>
+            <option value="coco">Coco</option>
+            <option value="zanahoria">Zanahoria</option>
+        </select>
+    </div>
+
+    <!--- Rellenos --->
+    <div class="form-group">
+        <label>Rellenos (Selecciona hasta 2)</label>
+        <div class="checkbox-group">
+            <div class="checkbox-item">
+                <input type="checkbox" id="crema" name="rellenos" value="crema">
+                <label for="crema">Crema Pastelera</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="ganache" name="rellenos" value="ganache">
+                <label for="ganache">Ganache de Chocolate</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="mousse" name="rellenos" value="mousse">
+                <label for="mousse">Mousse de Frutas</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="dulce-leche" name="rellenos" value="dulce-leche">
+                <label for="dulce-leche">Dulce de Leche</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="nata" name="rellenos" value="nata">
+                <label for="nata">Nata Montada</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="mermelada" name="rellenos" value="mermelada">
+                <label for="mermelada">Mermelada</label>
+            </div>
+        </div>
+    </div>
+
+<!--- Tamaño y Porciones --->
+<div class="form-row">
+    <div class="form-col">
+        <div class="form-group">
+            <label for="tamano" class="required">Tamaño</label>
+            <select id="tamano" name="tamano" required>
+                <option value="">Selecciona tamaño</option>
+                <option value="pequeno">Pequeño (8-10 porciones)</option>
+                <option value="mediano">Mediano (12-15 porciones)</option>
+                <option value="grande">Grande (18-20 porciones)</option>
+                <option value="extra">Extra Grande (25+ porciones)</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-col">
+        <div class="form-group">
+            <label for="fecha-entrega" class="required">Fecha de Entrega</label>
+            <input type="date" id="fecha-entrega" name="fecha-entrega" required>
+        </div>
+    </div>
+</div>
+
+                <button type="submit" class="btn-submit">
+                    Realizar Pedido
+                </button>
+            </form>
+        </div>
+    </div>
+
     <script src="./assets/js/navbar.js"></script>
 </body>
 </html>
