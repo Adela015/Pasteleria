@@ -5,138 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>CakeShop | Inicio</title>
 </head>
 <body>
 <!------------------------ NAVBAR ----------------------->
 
 <nav class="navbar">
-        <div class="nav-container">
-            <div>
-                <a href="./index.html" class="logo">
-                    <img src="./assets/images/logo.png" alt="Logo Pastelería" class="logo-img">
-                </a>
-            </div>
-            
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="./pages/catalogo.html" class="nav-link">Catálogo</a></li>
-                <li><a href="./pages/recetas.html" class="nav-link">Recetas</a></li>
-                <li><a href="./pages/contacto.html" class="nav-link">Contacto</a></li>
-                <li><a href="./pages/carrito.html" class="nav-link">Carrito</a></li>
-            </ul>
-
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-<!----------------------------- CARROUSEL -------------------------->
-
-<section class="container-carrousel">
-    <div class="carrousel-wrapper">
-        <div class="carrousel">
-            <img src="./assets/images/banner-1.png" alt="" id="carrousel-1">
-<!--            <img src="./assets/images/banner-1.png" alt="" id="carrousel-2">
-            <img src="./assets/images/banner-1.png" alt="" id="carrousel-3">
-        </div>
-        <div class="carrousel-nav">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-        </div>
+  <div class="nav-container">
+    <div class="logo">
+      <!-- Logo con la ruta proporcionada -->
+      <img src="./assets/images/logo.png" alt="Logo">
     </div>
-</section>
--->
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="./index.html" class="nav-link">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a href="./pages/catalogo.html" class="nav-link">Catálogo</a>
+      </li>
+      <li class="nav-item">
+        <a href="./pages/galeria.html" class="nav-link">Galería</a>
+      </li>
+      <li class="nav-item">
+        <a href="./pages/recetas.html" class="nav-link">Recetas</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Contacto</a>
+      </li>
+      
+      <!-- Iconos para móvil -->
+      <li class="mobile-icons">
+        <div class="icon">
+          <i class="fas fa-shopping-cart"></i>
+          <!-- <span class="icon-badge">3</span> -->
+        </div>
+        <div class="icon">
+          <i class="fas fa-heart"></i>
+          <!-- <span class="icon-badge">5</span> -->
+        </div>
+        <div class="icon">
+          <i class="fas fa-user"></i>
+        </div>
+      </li>
+    </ul>
+    <!-- Iconos para escritorio -->
+    <div class="nav-icons">
+      <div class="icon">
+        <i class="fas fa-shopping-cart"></i>
+        <!-- <span class="icon-badge">3</span> -->
+      </div>
+      <div class="icon">
+        <a href="./pages/favoritos.html"><i class="fas fa-heart"></i></a>
+        <!-- <span class="icon-badge">5</span> -->
+      </div>
+      <div class="icon">
+        <i class="fas fa-user"></i>
+      </div>
+    </div>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</nav>
+
+
+<!---------------------- SLIDER ------------------->
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./assets/images/banner-1.png" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/images/banner-2.png" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/images/banner-3.png" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/images/banner-4.png" alt=""></div>
+      <div class="swiper-slide"><img src="./assets/images/banner-5.png" alt=""></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
 
 <!------------------------------ GRID DE CARDS ---------------------------->
 
-    <div class="grid-container">
-
-        <div class="grid-item">
-            <img src="./assets/images/cartel-flex-1.png" alt="Imagen 1">
-        </div>
-
-        <div class="grid-item">
-            <img src="./assets/images/cartel-flex-2.png" alt="Imagen 2">
-        </div>
-
-        <div class="grid-item">
-            <img src="./assets/images/carteel-flex-3.png" alt="Imagen 3">
-        </div>
-
-        <div class="grid-item">
-            <img src="./assets/images/cartel-flex-4.png" alt="Imagen 4">
-        </div>
+<div class="grid-container">
+    <div class="grid-item">
+        <img src="./assets/images/cartel-flex-1.png" alt="Imagen 1">
     </div>
+    <div class="grid-item">
+        <img src="./assets/images/cartel-flex-2.png" alt="Imagen 2">
+    </div>
+    <div class="grid-item">
+        <img src="./assets/images/carteel-flex-3.png" alt="Imagen 3">
+    </div>
+    <div class="grid-item">
+        <img src="./assets/images/cartel-flex-4.png" alt="Imagen 4">
+    </div>
+</div>
 
 <!--------------------------- CARDS PRODUCTOS DESTACADOS ----------------------->
 
     <h2 class="titulo-responsive">Productos destacados</h2>
 
-    <div class="cards-container">
-        <!-- Card 1 -->
-        <div class="card">
-            <div class="card-content">
-                <a href="./pages/detalle-producto.html"><img src="./assets/images/cheesecake-1.jpg" alt="Cheesecake" class="card-img"></a><br>
-                    <h3 class="card-title">Cheesecake de Frutillas</h3>
-                    <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, l, repudiandae, sit quasi rem ex culpa.</p><br>
-                        <div class="card-price">$40.000</div>
-                        <div class="card-buttons">
-                            <a href="./pages/carrito.html"><button class="btn btn-cart">
-                                Añadir al Carrito
-                            </button></a>
-                            <a href="#"><button class="btn btn-wishlist">
-                                <span>❤️</span> Favoritos
-                            </button></a>
-                        </div>
-            </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="card">
-            <div class="card-content">
-                <a href="./pages/detalle-producto.html"><img src="./assets/images/cheesecake-3.jpg" alt="Cheesecake" class="card-img"></a><br>
-                    <h3 class="card-title">Cheesecake de Maracuyá</h3>
-                    <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, l, repudiandae, sit quasi rem ex culpa.</p><br>
-                        <div class="card-price">$35.000</div>
-                        <div class="card-buttons">
-                            <a href="./pages/carrito.html"><button class="btn btn-cart">
-                                Añadir al Carrito
-                            </button></a>
-                            <a href="#"><button class="btn btn-wishlist">
-                                <span>❤️</span> Favoritos
-                            </button></a>
-                        </div>
-            </div>
-        </div>
-        
-        <!-- Card 3 -->
 
-        <div class="card">
-            <div class="card-content">
-                <a href="./pages/detalle-producto.html"><img src="./assets/images/cheesecake-4.jpg" alt="Cheesecake" class="card-img"></a><br>
-                    <h3 class="card-title">Cheesecake de Arándanos</h3>
-                    <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, l, repudiandae, sit quasi rem ex culpa.</p><br>
-                        <div class="card-price">$37.000</div>
-                        <div class="card-buttons">
-                            <a href="./pages/carrito.html"><button class="btn btn-cart">
-                                Añadir al Carrito
-                            </button></a>
-                            <a href="#"><button class="btn btn-wishlist">
-                                <span>❤️</span> Favoritos
-                            </button></a>
-                        </div>
-            </div>
-        </div>
-
+    
 <!--------------------- FOOTER --------------------->
 
 
 
-    <script src="./assets/js/navbar.js"></script>
+<script src="./assets/js/navbar.js"></script>
+<!-- Swiper.js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./assets/js/slider.js"></script>
 
 </body>
 </html>
