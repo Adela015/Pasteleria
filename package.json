@@ -5,8 +5,8 @@
   "main": "index.html",
   "name": "swiper-navigation",
   "scripts": {
-    "build": "mkdir -p public && cp -r *.html *.css *.js *.json public/ 2>/dev/null || true",
-    "start": "serve public"
+    "build": "echo This is a static template, there is no bundler or bundling involved!",
+    "start": "serve"
   },
   "tags": [
     "swiper"
